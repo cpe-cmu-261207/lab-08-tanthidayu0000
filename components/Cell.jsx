@@ -13,13 +13,14 @@ export default function Cell(props) {
         height: "40px",
 
         //please replace color with painted color from position xPos, yPos
-        backgroundColor: "#FFFFFF",
+        backgroundColor: pixels[yPos][xPos],
 
         borderWidth: "1px",
         borderStyle: "solid",
         margin: "0px",
       }}
       onClick={() => {
+        paint(xPos, yPos);
         //when clicked, set pixels data at position xPos, yPos with selected color
         //you code here
       }}
